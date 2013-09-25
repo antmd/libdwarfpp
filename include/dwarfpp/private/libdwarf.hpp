@@ -1,7 +1,13 @@
 #ifndef DWARFPP_LIBDWARF_HPP_
 #define DWARFPP_LIBDWARF_HPP_
 
+#ifdef HAVE_ELF
 #include <libelf.h>
+#else
+typedef void Elf;
+typedef unsigned short     Dwarf_Half;
+
+#endif
 
 namespace dwarf
 {

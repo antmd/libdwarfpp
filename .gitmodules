@@ -1,0 +1,3 @@
+[submodule "external/libsrk31cxx"]
+	path = external/libsrk31cxx
+	url = https://github.com/stephenrkell/libsrk31cxx.git

@@ -11,6 +11,7 @@
 #include "spec.hpp"
 #include "private/libdwarf.hpp"
 
+#include <libelf.h>
 namespace dwarf
 {
 	namespace core { struct LocdescList; struct RangesList; }

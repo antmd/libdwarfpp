@@ -27,6 +27,11 @@
 #include "attr.hpp" // includes forward decls for iterator_df!
 #include "expr.hpp"
 
+namespace srk31 {
+    template<class Iter, class Pred> using selective_iterator =
+    ::selective_iterator<Iter, Pred>;
+    
+}
 namespace dwarf
 {
 	using std::string;

@@ -183,7 +183,10 @@ namespace dwarf
 				    || tag == DW_TAG_unspecified_type
 				    || tag == DW_TAG_shared_type
 				    || tag == DW_TAG_thrown_type
-				    || tag == DW_TAG_rvalue_reference_type;
+#ifdef DWARF4
+				    || tag == DW_TAG_rvalue_reference_type
+#endif
+                ;
 		    }
 		    template<> 
             bool table_def<0U>::tag_is_type_chain(int tag) const
@@ -196,7 +199,10 @@ namespace dwarf
 				    || tag == DW_TAG_restrict_type
 				    || tag == DW_TAG_shared_type
 				    || tag == DW_TAG_thrown_type
-				    || tag == DW_TAG_rvalue_reference_type;
+#ifdef DWARF4
+				    || tag == DW_TAG_rvalue_reference_type
+#endif
+                ;
 		    }
 		    /* This predicate is intended to match DWARF entries on which we might do
 		     * Cake's "name : pred"-style checking/assertions, where the 'name'd elements
@@ -228,8 +234,10 @@ namespace dwarf
 				    || tag == DW_TAG_imported_unit;	
 		    }			
 
+#ifdef DWARF4
 		    MAKE_LOOKUP(forward_name_mapping_t, tag_forward_tbl, PAIR_ENTRY_FORWARDS, PAIR_ENTRY_FORWARDS_LAST, TAG_PAIR_LIST);
 		    MAKE_LOOKUP(inverse_name_mapping_t, tag_inverse_tbl, PAIR_ENTRY_BACKWARDS, PAIR_ENTRY_BACKWARDS_LAST, TAG_PAIR_LIST);
+#endif
 
 		    /* DWARF3: attributes */
 		    #define ATTR_DECL_LIST(make_decl, last_decl) \
@@ -338,8 +346,10 @@ namespace dwarf
 				    || attr == DW_AT_return_addr;
 		    }
 
+#ifdef DWARF4
 		    MAKE_LOOKUP(forward_name_mapping_t, attr_forward_tbl, PAIR_ENTRY_FORWARDS_VARARGS, PAIR_ENTRY_FORWARDS_VARARGS_LAST, ATTR_DECL_LIST);
 		    MAKE_LOOKUP(inverse_name_mapping_t, attr_inverse_tbl, PAIR_ENTRY_BACKWARDS_VARARGS, PAIR_ENTRY_BACKWARDS_VARARGS_LAST, ATTR_DECL_LIST);
+#endif
 
 		    // define an array of interpretation classes for each DW_AT_ constant
 		    #define make_attr_array_declaration(attr_name, ...) const int attr_classes_ ## attr_name[] = { __VA_ARGS__, interp::EOL }; //
@@ -348,7 +358,9 @@ namespace dwarf
 		    // define a lookup table from DW_AT_ constants to the arrays just created
 		    #define make_attr_associative_entry(attr_name, ...) std::make_pair(attr_name, attr_classes_ ## attr_name),
 		    #define last_attr_associative_entry(attr_name, ...) std::make_pair(attr_name, attr_classes_ ## attr_name)
+#ifdef DWARF4
 		    MAKE_LOOKUP(attr_class_mapping_t, attr_class_tbl_array, make_attr_associative_entry, last_attr_associative_entry, ATTR_DECL_LIST);
+#endif
 
 		    #define FORM_DECL_LIST(make_decl, last_decl) \
 							    make_decl(DW_FORM_addr, interp::address)  \
@@ -378,8 +390,10 @@ namespace dwarf
 							    last_decl(DW_FORM_ref_sig8, interp::reference ) 
 								
 
+#ifdef DWARF4
 		    MAKE_LOOKUP(forward_name_mapping_t, form_forward_tbl, PAIR_ENTRY_FORWARDS_VARARGS, PAIR_ENTRY_FORWARDS_VARARGS_LAST, FORM_DECL_LIST);
 		    MAKE_LOOKUP(inverse_name_mapping_t, form_inverse_tbl, PAIR_ENTRY_BACKWARDS_VARARGS, PAIR_ENTRY_BACKWARDS_VARARGS_LAST, FORM_DECL_LIST);
+#endif
 
 		    // define an array of interpretation classes for each DW_FORM_ constant
 		    #define make_form_array_declaration(form_name, ...) const int form_classes_ ## form_name[] = { __VA_ARGS__, interp::EOL }; //
@@ -388,7 +402,9 @@ namespace dwarf
 		    // define a lookup table from DW_FORM_ constants to the arrays just created
 		    #define make_form_associative_entry(form_name, ...) std::make_pair(form_name, form_classes_ ## form_name),
 		    #define last_form_associative_entry(form_name, ...) std::make_pair(form_name, form_classes_ ## form_name)
+#ifdef DWARF4
 		    MAKE_LOOKUP(form_class_mapping_t, form_class_tbl_array, make_form_associative_entry, last_form_associative_entry, FORM_DECL_LIST);
+#endif
 
 		    #define ENCODING_PAIR_LIST(make_pair, last_pair) \
 							    make_pair(DW_ATE_address)  \
@@ -581,8 +597,10 @@ namespace dwarf
 				    || (op >= DW_OP_reg0 && op <= DW_OP_bregx)
 					|| op == DW_OP_fbreg;
 		    }
+#ifdef DWARF4
 		    MAKE_LOOKUP(forward_name_mapping_t, op_forward_tbl, PAIR_ENTRY_FORWARDS_VARARGS, PAIR_ENTRY_FORWARDS_VARARGS_LAST, OP_DECL_LIST);
 		    MAKE_LOOKUP(inverse_name_mapping_t, op_inverse_tbl, PAIR_ENTRY_BACKWARDS_VARARGS, PAIR_ENTRY_BACKWARDS_VARARGS_LAST, OP_DECL_LIST);
+#endif
 
 		    // define an array of interpretation classes for each DW_FORM_ constant
 		    #define make_op_array_declaration(op_name, ...) const int op_operand_forms_ ## op_name[] = { __VA_ARGS__, 0 }; //
@@ -593,7 +611,9 @@ namespace dwarf
 		    #undef last_op_associative_entry
 		    #define make_op_associative_entry(op_name, ...) std::make_pair(op_name, op_operand_forms_ ## op_name),
 		    #define last_op_associative_entry(op_name, ...) std::make_pair(op_name, op_operand_forms_ ## op_name)
+#ifdef DWARF4
 		    MAKE_LOOKUP(op_operand_forms_mapping_t, op_operand_forms_tbl_array, make_op_associative_entry, last_op_associative_entry, OP_DECL_LIST);
+#endif
 
 
 		    #define INTERP_DECL_LIST(make_decl, last_decl) \
@@ -636,9 +656,11 @@ namespace dwarf
 			    }
 		    }  
 
+#ifdef DWARF4
         template<> dwarf3_def dwarf3_def::inst(TABLE_ARGS_NS(::dwarf::spec))
-		 __attribute__((init_priority(1000))); 
-		 /* FIXME: init priority might be an issue -- need to make sure that we 
+		 __attribute__((init_priority(1000)));
+#endif
+		 /* FIXME: init priority might be an issue -- need to make sure that we
 		  * initialize this before any static state that uses DWARF specs in this 
 		  * library. BUT note that static state in *other* libraries is not our 
 		  * problem -- client programmers must get the link order correct so that 

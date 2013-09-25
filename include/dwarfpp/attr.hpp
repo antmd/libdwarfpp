@@ -10,13 +10,14 @@
 #define __DWARFPP_ATTR_HPP
 
 #include <memory>
+#include <vector>
 
 #include "spec.hpp"
 #include "private/libdwarf.hpp" /* includes libdwarf.h, Error, No_entry, some fwddecls */
 
 #include <boost/optional.hpp>
 
-#include <srk31/util.hpp> /* for forward_constructors */
+//#include <srk31/util.hpp> /* for forward_constructors */
 
 namespace dwarf
 {

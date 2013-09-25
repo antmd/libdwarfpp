@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED783A2117F3109B00FB7719 /* libdwarfpp.cp in Sources */ = {isa = PBXBuildFile; fileRef = ED783A2017F3109B00FB7719 /* libdwarfpp.cp */; };
+		ED783A4E17F310C000FB7719 /* adt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED783A2817F310C000FB7719 /* adt.cpp */; };
+		ED783A4F17F310C000FB7719 /* attr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED783A2917F310C000FB7719 /* attr.cpp */; };
+		ED783A5017F310C000FB7719 /* cxx_compiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED783A2A17F310C000FB7719 /* cxx_compiler.cpp */; };
+		ED783A5117F310C000FB7719 /* cxx_dependency_order.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED783A2B17F310C000FB7719 /* cxx_dependency_order.cpp */; };
+		ED783A5217F310C000FB7719 /* cxx_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED783A2C17F310C000FB7719 /* cxx_model.cpp */; };
+		ED783A5317F310C000FB7719 /* encap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED783A2D17F310C000FB7719 /* encap.cpp */; };
+		ED783A5417F310C000FB7719 /* encap_adt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED783A2E17F310C000FB7719 /* encap_adt.cpp */; };
+		ED783A5517F310C000FB7719 /* expr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED783A2F17F310C000FB7719 /* expr.cpp */; };
+		ED783A5617F310C000FB7719 /* lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED783A3017F310C000FB7719 /* lib.cpp */; };
+		ED783A5717F310C000FB7719 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = ED783A3117F310C000FB7719 /* Makefile */; };
+		ED783A5817F310C000FB7719 /* rep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED783A3217F310C000FB7719 /* rep.cpp */; };
+		ED783A5917F310C000FB7719 /* spec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED783A3517F310C000FB7719 /* spec.cpp */; };
+		ED783A5A17F310C000FB7719 /* adt.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A3817F310C000FB7719 /* adt.hpp */; };
+		ED783A5B17F310C000FB7719 /* attr.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A3917F310C000FB7719 /* attr.hpp */; };
+		ED783A5C17F310C000FB7719 /* core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A3A17F310C000FB7719 /* core.hpp */; };
+		ED783A5D17F310C000FB7719 /* cxx_compiler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A3B17F310C000FB7719 /* cxx_compiler.hpp */; };
+		ED783A5E17F310C000FB7719 /* cxx_dependency_order.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A3C17F310C000FB7719 /* cxx_dependency_order.hpp */; };
+		ED783A5F17F310C000FB7719 /* cxx_model.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A3D17F310C000FB7719 /* cxx_model.hpp */; };
+		ED783A6017F310C000FB7719 /* encap.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A4017F310C000FB7719 /* encap.hpp */; };
+		ED783A6117F310C000FB7719 /* encap_graph.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A4117F310C000FB7719 /* encap_graph.hpp */; };
+		ED783A6217F310C000FB7719 /* encap_sibling_graph.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A4217F310C000FB7719 /* encap_sibling_graph.hpp */; };
+		ED783A6317F310C000FB7719 /* expr.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A4317F310C000FB7719 /* expr.hpp */; };
+		ED783A6417F310C000FB7719 /* lib.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A4417F310C000FB7719 /* lib.hpp */; };
+		ED783A6517F310C000FB7719 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = ED783A4517F310C000FB7719 /* Makefile */; };
+		ED783A6617F310C000FB7719 /* opt.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A4617F310C000FB7719 /* opt.hpp */; };
+		ED783A6717F310C000FB7719 /* libdwarf-handles.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A4817F310C000FB7719 /* libdwarf-handles.hpp */; };
+		ED783A6817F310C000FB7719 /* libdwarf.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A4917F310C000FB7719 /* libdwarf.hpp */; };
+		ED783A6917F310C000FB7719 /* regs.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A4A17F310C000FB7719 /* regs.hpp */; };
+		ED783A6A17F310C000FB7719 /* spec.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A4B17F310C000FB7719 /* spec.hpp */; };
+		ED783A6B17F310C000FB7719 /* spec_adt.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ED783A4C17F310C000FB7719 /* spec_adt.hpp */; };
+		ED783A6C17F310C000FB7719 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = ED783A4D17F310C000FB7719 /* Makefile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED783A1717F3109B00FB7719 /* libdwarfpp.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libdwarfpp.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED783A1B17F3109B00FB7719 /* libdwarfpp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libdwarfpp-Prefix.pch"; sourceTree = "<group>"; };
+		ED783A1C17F3109B00FB7719 /* libdwarfppProj.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = libdwarfppProj.xcconfig; sourceTree = "<group>"; };
+		ED783A1D17F3109B00FB7719 /* libdwarfppTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = libdwarfppTarget.xcconfig; sourceTree = "<group>"; };
+		ED783A1E17F3109B00FB7719 /* libdwarfpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libdwarfpp.h; sourceTree = "<group>"; };
+		ED783A1F17F3109B00FB7719 /* libdwarfppPriv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libdwarfppPriv.h; sourceTree = "<group>"; };
+		ED783A2017F3109B00FB7719 /* libdwarfpp.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = libdwarfpp.cp; sourceTree = "<group>"; };
+		ED783A2817F310C000FB7719 /* adt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = adt.cpp; sourceTree = "<group>"; };
+		ED783A2917F310C000FB7719 /* attr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = attr.cpp; sourceTree = "<group>"; };
+		ED783A2A17F310C000FB7719 /* cxx_compiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cxx_compiler.cpp; sourceTree = "<group>"; };
+		ED783A2B17F310C000FB7719 /* cxx_dependency_order.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cxx_dependency_order.cpp; sourceTree = "<group>"; };
+		ED783A2C17F310C000FB7719 /* cxx_model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cxx_model.cpp; sourceTree = "<group>"; };
+		ED783A2D17F310C000FB7719 /* encap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = encap.cpp; sourceTree = "<group>"; };
+		ED783A2E17F310C000FB7719 /* encap_adt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = encap_adt.cpp; sourceTree = "<group>"; };
+		ED783A2F17F310C000FB7719 /* expr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = expr.cpp; sourceTree = "<group>"; };
+		ED783A3017F310C000FB7719 /* lib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lib.cpp; sourceTree = "<group>"; };
+		ED783A3117F310C000FB7719 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		ED783A3217F310C000FB7719 /* rep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rep.cpp; sourceTree = "<group>"; };
+		ED783A3417F310C000FB7719 /* adt-gen.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "adt-gen.py"; sourceTree = "<group>"; };
+		ED783A3517F310C000FB7719 /* spec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spec.cpp; sourceTree = "<group>"; };
+		ED783A3817F310C000FB7719 /* adt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = adt.hpp; sourceTree = "<group>"; };
+		ED783A3917F310C000FB7719 /* attr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = attr.hpp; sourceTree = "<group>"; };
+		ED783A3A17F310C000FB7719 /* core.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = core.hpp; sourceTree = "<group>"; };
+		ED783A3B17F310C000FB7719 /* cxx_compiler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cxx_compiler.hpp; sourceTree = "<group>"; };
+		ED783A3C17F310C000FB7719 /* cxx_dependency_order.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cxx_dependency_order.hpp; sourceTree = "<group>"; };
+		ED783A3D17F310C000FB7719 /* cxx_model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cxx_model.hpp; sourceTree = "<group>"; };
+		ED783A3E17F310C000FB7719 /* dwarf3-adt.h */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dwarf3-adt.h"; sourceTree = "<group>"; };
+		ED783A3F17F310C000FB7719 /* dwarf3-factory.h */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dwarf3-factory.h"; sourceTree = "<group>"; };
+		ED783A4017F310C000FB7719 /* encap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = encap.hpp; sourceTree = "<group>"; };
+		ED783A4117F310C000FB7719 /* encap_graph.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = encap_graph.hpp; sourceTree = "<group>"; };
+		ED783A4217F310C000FB7719 /* encap_sibling_graph.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = encap_sibling_graph.hpp; sourceTree = "<group>"; };
+		ED783A4317F310C000FB7719 /* expr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = expr.hpp; sourceTree = "<group>"; };
+		ED783A4417F310C000FB7719 /* lib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lib.hpp; sourceTree = "<group>"; };
+		ED783A4517F310C000FB7719 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		ED783A4617F310C000FB7719 /* opt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = opt.hpp; sourceTree = "<group>"; };
+		ED783A4817F310C000FB7719 /* libdwarf-handles.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "libdwarf-handles.hpp"; sourceTree = "<group>"; };
+		ED783A4917F310C000FB7719 /* libdwarf.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = libdwarf.hpp; sourceTree = "<group>"; };
+		ED783A4A17F310C000FB7719 /* regs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = regs.hpp; sourceTree = "<group>"; };
+		ED783A4B17F310C000FB7719 /* spec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = spec.hpp; sourceTree = "<group>"; };
+		ED783A4C17F310C000FB7719 /* spec_adt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = spec_adt.hpp; sourceTree = "<group>"; };
+		ED783A4D17F310C000FB7719 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		ED783A6D17F321FC00FB7719 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = dwarfpp/config.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED783A1417F3109B00FB7719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED783A0E17F3109B00FB7719 = {
+			isa = PBXGroup;
+			children = (
+				ED783A1917F3109B00FB7719 /* libdwarfpp */,
+				ED783A1817F3109B00FB7719 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED783A1817F3109B00FB7719 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED783A1717F3109B00FB7719 /* libdwarfpp.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED783A1917F3109B00FB7719 /* libdwarfpp */ = {
+			isa = PBXGroup;
+			children = (
+				ED783A2717F310C000FB7719 /* src */,
+				ED783A3617F310C000FB7719 /* include */,
+				ED783A1C17F3109B00FB7719 /* libdwarfppProj.xcconfig */,
+				ED783A1D17F3109B00FB7719 /* libdwarfppTarget.xcconfig */,
+				ED783A1E17F3109B00FB7719 /* libdwarfpp.h */,
+				ED783A1F17F3109B00FB7719 /* libdwarfppPriv.h */,
+				ED783A2017F3109B00FB7719 /* libdwarfpp.cp */,
+				ED783A1A17F3109B00FB7719 /* Supporting Files */,
+			);
+			path = libdwarfpp;
+			sourceTree = "<group>";
+		};
+		ED783A1A17F3109B00FB7719 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED783A1B17F3109B00FB7719 /* libdwarfpp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED783A2717F310C000FB7719 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				ED783A2817F310C000FB7719 /* adt.cpp */,
+				ED783A2917F310C000FB7719 /* attr.cpp */,
+				ED783A2A17F310C000FB7719 /* cxx_compiler.cpp */,
+				ED783A2B17F310C000FB7719 /* cxx_dependency_order.cpp */,
+				ED783A2C17F310C000FB7719 /* cxx_model.cpp */,
+				ED783A2D17F310C000FB7719 /* encap.cpp */,
+				ED783A2E17F310C000FB7719 /* encap_adt.cpp */,
+				ED783A2F17F310C000FB7719 /* expr.cpp */,
+				ED783A3017F310C000FB7719 /* lib.cpp */,
+				ED783A3117F310C000FB7719 /* Makefile */,
+				ED783A3217F310C000FB7719 /* rep.cpp */,
+				ED783A3317F310C000FB7719 /* spec */,
+				ED783A3517F310C000FB7719 /* spec.cpp */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		ED783A3317F310C000FB7719 /* spec */ = {
+			isa = PBXGroup;
+			children = (
+				ED783A3417F310C000FB7719 /* adt-gen.py */,
+			);
+			path = spec;
+			sourceTree = "<group>";
+		};
+		ED783A3617F310C000FB7719 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				ED783A3717F310C000FB7719 /* dwarfpp */,
+				ED783A4D17F310C000FB7719 /* Makefile */,
+				ED783A6D17F321FC00FB7719 /* config.h */,
+			);
+			name = include;
+			path = ../../include;
+			sourceTree = "<group>";
+		};
+		ED783A3717F310C000FB7719 /* dwarfpp */ = {
+			isa = PBXGroup;
+			children = (
+				ED783A3817F310C000FB7719 /* adt.hpp */,
+				ED783A3917F310C000FB7719 /* attr.hpp */,
+				ED783A3A17F310C000FB7719 /* core.hpp */,
+				ED783A3B17F310C000FB7719 /* cxx_compiler.hpp */,
+				ED783A3C17F310C000FB7719 /* cxx_dependency_order.hpp */,
+				ED783A3D17F310C000FB7719 /* cxx_model.hpp */,
+				ED783A3E17F310C000FB7719 /* dwarf3-adt.h */,
+				ED783A3F17F310C000FB7719 /* dwarf3-factory.h */,
+				ED783A4017F310C000FB7719 /* encap.hpp */,
+				ED783A4117F310C000FB7719 /* encap_graph.hpp */,
+				ED783A4217F310C000FB7719 /* encap_sibling_graph.hpp */,
+				ED783A4317F310C000FB7719 /* expr.hpp */,
+				ED783A4417F310C000FB7719 /* lib.hpp */,
+				ED783A4517F310C000FB7719 /* Makefile */,
+				ED783A4617F310C000FB7719 /* opt.hpp */,
+				ED783A4717F310C000FB7719 /* private */,
+				ED783A4A17F310C000FB7719 /* regs.hpp */,
+				ED783A4B17F310C000FB7719 /* spec.hpp */,
+				ED783A4C17F310C000FB7719 /* spec_adt.hpp */,
+			);
+			path = dwarfpp;
+			sourceTree = "<group>";
+		};
+		ED783A4717F310C000FB7719 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				ED783A4817F310C000FB7719 /* libdwarf-handles.hpp */,
+				ED783A4917F310C000FB7719 /* libdwarf.hpp */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ED783A1517F3109B00FB7719 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED783A6617F310C000FB7719 /* opt.hpp in Headers */,
+				ED783A6B17F310C000FB7719 /* spec_adt.hpp in Headers */,
+				ED783A5F17F310C000FB7719 /* cxx_model.hpp in Headers */,
+				ED783A6417F310C000FB7719 /* lib.hpp in Headers */,
+				ED783A6917F310C000FB7719 /* regs.hpp in Headers */,
+				ED783A6817F310C000FB7719 /* libdwarf.hpp in Headers */,
+				ED783A6717F310C000FB7719 /* libdwarf-handles.hpp in Headers */,
+				ED783A5C17F310C000FB7719 /* core.hpp in Headers */,
+				ED783A6217F310C000FB7719 /* encap_sibling_graph.hpp in Headers */,
+				ED783A6317F310C000FB7719 /* expr.hpp in Headers */,
+				ED783A6A17F310C000FB7719 /* spec.hpp in Headers */,
+				ED783A6017F310C000FB7719 /* encap.hpp in Headers */,
+				ED783A5A17F310C000FB7719 /* adt.hpp in Headers */,
+				ED783A5B17F310C000FB7719 /* attr.hpp in Headers */,
+				ED783A6117F310C000FB7719 /* encap_graph.hpp in Headers */,
+				ED783A5D17F310C000FB7719 /* cxx_compiler.hpp in Headers */,
+				ED783A5E17F310C000FB7719 /* cxx_dependency_order.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ED783A1617F3109B00FB7719 /* libdwarfpp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED783A2417F3109B00FB7719 /* Build configuration list for PBXNativeTarget "libdwarfpp" */;
+			buildPhases = (
+				ED783A1317F3109B00FB7719 /* Sources */,
+				ED783A1417F3109B00FB7719 /* Frameworks */,
+				ED783A1517F3109B00FB7719 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libdwarfpp;
+			productName = libdwarfpp;
+			productReference = ED783A1717F3109B00FB7719 /* libdwarfpp.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED783A0F17F3109B00FB7719 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = dervishsoftware;
+			};
+			buildConfigurationList = ED783A1217F3109B00FB7719 /* Build configuration list for PBXProject "libdwarfpp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ED783A0E17F3109B00FB7719;
+			productRefGroup = ED783A1817F3109B00FB7719 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED783A1617F3109B00FB7719 /* libdwarfpp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED783A1317F3109B00FB7719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED783A6C17F310C000FB7719 /* Makefile in Sources */,
+				ED783A2117F3109B00FB7719 /* libdwarfpp.cp in Sources */,
+				ED783A4E17F310C000FB7719 /* adt.cpp in Sources */,
+				ED783A5517F310C000FB7719 /* expr.cpp in Sources */,
+				ED783A5817F310C000FB7719 /* rep.cpp in Sources */,
+				ED783A5717F310C000FB7719 /* Makefile in Sources */,
+				ED783A5017F310C000FB7719 /* cxx_compiler.cpp in Sources */,
+				ED783A5217F310C000FB7719 /* cxx_model.cpp in Sources */,
+				ED783A5617F310C000FB7719 /* lib.cpp in Sources */,
+				ED783A5317F310C000FB7719 /* encap.cpp in Sources */,
+				ED783A5417F310C000FB7719 /* encap_adt.cpp in Sources */,
+				ED783A5917F310C000FB7719 /* spec.cpp in Sources */,
+				ED783A4F17F310C000FB7719 /* attr.cpp in Sources */,
+				ED783A6517F310C000FB7719 /* Makefile in Sources */,
+				ED783A5117F310C000FB7719 /* cxx_dependency_order.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ED783A2217F3109B00FB7719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ED783A2317F3109B00FB7719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ED783A2517F3109B00FB7719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../include",
+					"$(SRCROOT)/../external/include",
+					/usr/local/include,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ED783A2617F3109B00FB7719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../include",
+					"$(SRCROOT)/../external/include",
+					/usr/local/include,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED783A1217F3109B00FB7719 /* Build configuration list for PBXProject "libdwarfpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED783A2217F3109B00FB7719 /* Debug */,
+				ED783A2317F3109B00FB7719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED783A2417F3109B00FB7719 /* Build configuration list for PBXNativeTarget "libdwarfpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED783A2517F3109B00FB7719 /* Debug */,
+				ED783A2617F3109B00FB7719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED783A0F17F3109B00FB7719 /* Project object */;
+}
